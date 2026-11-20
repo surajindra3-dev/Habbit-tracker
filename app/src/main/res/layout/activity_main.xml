@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramban — Strict Focus &amp; Usage Analyzer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Ready"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="#E8F5E9"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Permissions Setup"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <Button
+            android:id="@+id/btnPermUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grant Usage Access" />
+
+        <Button
+            android:id="@+id/btnPermAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Accessibility Service" />
+
+        <Button
+            android:id="@+id/btnPermOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grant Display Over Other Apps" />
+
+        <Button
+            android:id="@+id/btnPermAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activate Device Admin (Anti-Uninstall)"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Focus Timer &amp; Schedule"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnPreset30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30m" />
+
+            <Button
+                android:id="@+id/btnPreset60"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="1h" />
+
+            <Button
+                android:id="@+id/btnPreset120"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="2h" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etCustomMinutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Custom Countdown Minutes (e.g., 45)"
+            android:inputType="number"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnStartTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Time: --:--" />
+
+            <Button
+                android:id="@+id/btnEndTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="End Time: --:--" />
+        </LinearLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchStrictMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Strict Mode (Cannot Stop Until Timer Ends)"
+            android:textStyle="bold"
+            android:checked="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnStartFocus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Focus Session"
+            android:backgroundTint="#C62828"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnStopFocus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Session"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Today's App Usage &amp; Block Selection"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <Button
+            android:id="@+id/btnRefreshUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Today's Usage &amp; App List"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/containerApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>
+          
