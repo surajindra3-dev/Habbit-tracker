@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ramban</string>
+    <string name="accessibility_desc">Ramban needs Accessibility access to detect and block distracting apps during Strict Focus Mode.</string>
+</resources>
